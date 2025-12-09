@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import ProductList from './components/ProductList';
+import ProductForm from './components/ProductForm';
+import SalesReport from './components/SalesReport';
+import Login from './components/Login';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: React.FC = () => {
+  const [user, setUser] = useState<string | null>(null);
+  const [page, setPage] = useState<'products' | 'report'>('products');
+
+  if (!user) return <Login onLogin={setUser} />;
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="min-h-screen bg-gray-100 p-4">
+      <header className="flex flex-col md:flex-row items-center justify-between mb-6">
+        <h1 className="text-2xl font-bold text-gray-800 mb-2 md:mb-0">Inventory Management System</h1>
+        <div className="flex items-center space-x-2">
+          <span className="text-gray-700">Hello, {user}</span>
+          <nav className="space-x-2">
+            <button
+              onClick={() => setPage('products')}
+              className={`px-4 py-2 rounded ${page === 'products' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
+            >
+              Products
+            </button>
+            <button
+              onClick={() => setPage('report')}
+              className={`px-4 py-2 rounded ${page === 'report' ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-800'}`}
+            >
+              Sales Report
+            </button>
+          </nav>
+        </div>
+      </header>
 
-export default App
+      <main>
+        {page === 'products' && (
+          <>
+            <ProductForm />
+            <ProductList />
+          </>
+        )}
+        {page === 'report' && <SalesReport />}
+      </main>
+    </div>
+  );
+};
+
+export default App;
