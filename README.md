@@ -1,10 +1,20 @@
-# 📦 Inventory Management System 
+<img width="1920" height="1008" alt="Screenshot 2025-12-09 121550" src="https://github.com/user-attachments/assets/a5a5c931-da24-4eaa-ac0c-0b69106ef326" /># 📦 Inventory Management System 
 
 This project is a full-stack inventory management system designed to streamline and simplify the process of tracking products, managing sales, and generating insightful reports. It provides a user-friendly interface for managing product information, processing sales transactions, and gaining valuable insights into sales performance. The system addresses the need for efficient inventory control, accurate sales tracking, and data-driven decision-making.
+
+## Project Video: 
+https://www.loom.com/share/2c7e085c462c4db7a1d3f590fb809f98
 
 
 📸 **Screenshots**
 
+<img width="1920" height="1008" alt="Screenshot 2025-12-09 121511" src="https://github.com/user-attachments/assets/01043c1d-97e4-4f88-ad8f-a8acba089164" />
+
+
+<img width="1920" height="1008" alt="Screenshot 2025-12-09 121550" src="https://github.com/user-attachments/assets/204712be-8fa7-4f2f-9ad5-bf0cee94a12c" />
+
+
+<img width="1920" height="1008" alt="Screenshot 2025-12-09 121635" src="https://github.com/user-attachments/assets/c0b20f9d-f61e-41ac-a52c-ed7e55b62fce" />
 
 🚀 **Key Features**
 
