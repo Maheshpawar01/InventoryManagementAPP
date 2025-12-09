@@ -6,11 +6,7 @@ import Sale from '../models/Sale';
 
 const router = Router();
 
-/**
- * POST /api/sales
- * Body: { productId: string, quantity: number }
- * Creates a sale and reduces product stock inside a transaction.
- */
+
 router.post('/', async (req, res) => {
   const session = await mongoose.startSession();
 
@@ -66,10 +62,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-/**
- * GET /api/sales/report
- * Returns total sales and top best-selling products.
- */
 router.get('/report', async (req, res) => {
   try {
     const total = await Sale.aggregate([
@@ -88,7 +80,7 @@ router.get('/report', async (req, res) => {
       { $limit: 5 },
       {
         $lookup: {
-          from: 'products', // matches the collection name for Product model
+          from: 'products',
           localField: '_id',
           foreignField: '_id',
           as: 'product',

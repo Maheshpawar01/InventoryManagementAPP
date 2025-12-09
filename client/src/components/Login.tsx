@@ -8,7 +8,7 @@ const Login: React.FC<Props> = ({ onLogin }) => {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
 
-  // Hardcoded user (practice)
+  // Hardcoded user 
   const correctUser = {
     name: 'admin',
     password: '12345',

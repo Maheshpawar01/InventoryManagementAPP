@@ -15,7 +15,6 @@ app.use(cors({
 app.use(express.json());
 
 
-// Replace with your MongoDB connection string or use an env variable
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/inventory_app';
 
 
