@@ -1,0 +1,10 @@
+# Vite-specific
+dist/
+.env*
+!.env.example
+
+# Testing
+/coverage
+
+# TypeScript temp
+*.tsbuildinfo

@@ -1,0 +1,10 @@
+# Server-specific
+dist/
+logs/
+tmp/
+*.pid
+*.db
+
+# Already covered by root, but explicit
+.env*
+node_modules/
