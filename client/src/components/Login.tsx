@@ -10,8 +10,8 @@ const Login: React.FC<Props> = ({ onLogin }) => {
 
   // Hardcoded user (practice)
   const correctUser = {
-    name: 'megh',
-    password: '1234',
+    name: 'admin',
+    password: '12345',
   };
 
   const handleLogin = () => {
@@ -50,8 +50,8 @@ const Login: React.FC<Props> = ({ onLogin }) => {
         {/* Credentials hint */}
         <div className="text-xs text-gray-500 border-t pt-4">
           <p><strong>Demo credentials:</strong></p>
-          <p>Name: <span className="font-mono bg-gray-100 px-1 rounded">megh</span></p>
-          <p>Password: <span className="font-mono bg-gray-100 px-1 rounded">1234</span></p>
+          <p>Name: <span className="font-mono bg-gray-100 px-1 rounded">admin</span></p>
+          <p>Password: <span className="font-mono bg-gray-100 px-1 rounded">12345</span></p>
         </div>
       </div>
     </div>
