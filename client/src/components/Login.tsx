@@ -42,10 +42,17 @@ const Login: React.FC<Props> = ({ onLogin }) => {
         />
         <button
           onClick={handleLogin}
-          className="bg-blue-500 text-white px-4 py-2 rounded w-full"
+          className="bg-blue-500 text-white px-4 py-2 rounded w-full mb-6"
         >
           Login
         </button>
+        
+        {/* Credentials hint */}
+        <div className="text-xs text-gray-500 border-t pt-4">
+          <p><strong>Demo credentials:</strong></p>
+          <p>Name: <span className="font-mono bg-gray-100 px-1 rounded">megh</span></p>
+          <p>Password: <span className="font-mono bg-gray-100 px-1 rounded">1234</span></p>
+        </div>
       </div>
     </div>
   );
