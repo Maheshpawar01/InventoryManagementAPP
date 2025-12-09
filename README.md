@@ -1,4 +1,4 @@
-<img width="1920" height="1008" alt="Screenshot 2025-12-09 121550" src="https://github.com/user-attachments/assets/a5a5c931-da24-4eaa-ac0c-0b69106ef326" /># 📦 Inventory Management System 
+# 📦 Inventory Management System 
 
 This project is a full-stack inventory management system designed to streamline and simplify the process of tracking products, managing sales, and generating insightful reports. It provides a user-friendly interface for managing product information, processing sales transactions, and gaining valuable insights into sales performance. The system addresses the need for efficient inventory control, accurate sales tracking, and data-driven decision-making.
 
