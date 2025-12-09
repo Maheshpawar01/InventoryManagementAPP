@@ -7,11 +7,10 @@ import productsRouter from './routes/products';
 import salesRouter from './routes/sales'
 const app = express();
 app.use(cors({
-  origin: function (origin, callback) {
-    callback(null, true);
-  },
+  origin: "*",
   credentials: true
 }));
+
 
 app.use(express.json());
 
